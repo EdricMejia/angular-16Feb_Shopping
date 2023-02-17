@@ -36,12 +36,6 @@ export const products = [
     price: 299,
     description: 'Galaxy Series 23',
   },
-  {
-    id: 6,
-    name: 'Iphone 14',
-    price: 700,
-    description: 'IOS',
-  },
 ];
 
 /*
