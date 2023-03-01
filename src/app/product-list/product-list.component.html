@@ -1,13 +1,16 @@
 <h2>Products</h2>
 
 <div class="contenido">
-  <div *ngFor="let product of products">
-    <app-product [product]="product"></app-product>
+  <div *ngFor="let product of products" class="producto">
+
+    <h3>
+      <a></a>
+    </h3>
+
+    <app-product [product]="product" class="producto">
+      
+    </app-product>
+  
   </div>
 </div>
 
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->

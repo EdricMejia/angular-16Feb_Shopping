@@ -1,14 +1,28 @@
 <p-card>
   <ng-template pTemplate="header">
+
     <h3>
-      <a [title]="'Details ' + product.name">
-        {{ product.name }}
+      <a [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{ product.name }}
       </a>
     </h3>
+
   </ng-template>
-  <p *ngIf="product.description">Descripción: {{ product.description }}</p>
-  <button type="button">Compartir</button>
+
+  <p *ngIf="product.description">
+    Descripción: {{ product.description }}
+  </p>
+
+  <button type="button" (click)="share()">
+    Compartir
+  </button>
+
+  
+
   <ng-template pTemplate="footer">
-    <app-product-alerts [product]="product"> </app-product-alerts>
+
+    <app-product-alerts [product]="product" (notify)="onNotify()"> </app-product-alerts>
+    
   </ng-template>
 </p-card>

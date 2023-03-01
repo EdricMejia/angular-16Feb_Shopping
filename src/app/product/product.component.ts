@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Product } from '../products';
+import { Products } from '../products';
 
 @Component({
   selector: 'app-product',
@@ -7,5 +7,14 @@ import { Product } from '../products';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
-  @Input() product!: Product;
+  @Input() product!: Products;
+
+
+  share() {
+    window.alert('The product has been shared!');
+  }
+
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
+  }
 }

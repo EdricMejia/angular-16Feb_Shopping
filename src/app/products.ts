@@ -1,4 +1,4 @@
-export interface Product {
+export interface Products {
   id: number;
   name: string;
   price: number;
@@ -22,19 +22,25 @@ export const products = [
     id: 3,
     name: 'Phone Standard',
     price: 299,
-    description: '',
+    description: 'A phone amazing for a best price',
   },
   {
     id: 4,
     name: 'Xiaomi Redmi',
     price: 500,
-    description: 'Redmi Note 11',
+    description: 'Redmi Note 11 Beyond a greatful phone',
   },
   {
     id: 5,
     name: 'Samsung Galaxy',
     price: 299,
-    description: 'Galaxy Series 23',
+    description: 'Galaxy Series 23 Adquiere tu smarthpone Galaxy',
+  },
+  {
+    id: 6,
+    name: 'Iphone',
+    price: 300,
+    description: 'Iphone 14',
   },
 ];
 
